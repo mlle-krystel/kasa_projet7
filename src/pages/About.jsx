@@ -1,10 +1,18 @@
 import React from "react";
-import "../styles/A_propos.scss";
+import "../styles/About.scss";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
-const A_propos = () => {
+const About = () => {
   return (
+    <div>
+      <header className="header">
+        <Logo />
+        <nav>
+          <Link to="/">Accueil</Link>
+          <Link to="/About">À propos</Link>
+        </nav>
+      </header>
     <div className="a-propos">
       <Banner image="/assets/banner_about.jpg" text="À propos" />
       <Collapse title="Fiabilité">
@@ -20,7 +28,12 @@ const A_propos = () => {
         La sécurité est la priorité de Kasa...
       </Collapse>
     </div>
+
+    <footer className="footer">
+        <Logo />
+      </footer>
+      </div>
   );
 };
 
-export default A_propos;
+export default About;

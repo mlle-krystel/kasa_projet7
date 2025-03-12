@@ -8,8 +8,8 @@ const Header = () => {
     <header className="header">
       <Logo />
       <nav>
-        <Link to="/">Accueil</Link> {/* ✅ Utilisation correcte de Link */}
-        <Link to="/about">À propos</Link> {/* ✅ Correction ici */}
+        <Link to="/">Accueil</Link> 
+        <Link to="/about">À propos</Link> 
       </nav>
     </header>
   );
