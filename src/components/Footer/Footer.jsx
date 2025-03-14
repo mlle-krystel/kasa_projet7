@@ -1,9 +1,11 @@
 import React from "react";
-import "../styles/Footer.scss";
+import "./Footer.scss";
+import Logo from "../Logo/Logo.jsx";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer>
+    <Logo />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );

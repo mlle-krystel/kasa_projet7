@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
+import "./Gallery.scss"; 
 
 const Gallery = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!pictures || pictures.length === 0) {
-    return <p>Aucune image disponible.</p>;
+    return <p>Aucune image disponible</p>; 
   }
 
   const nextImage = () => {
@@ -19,13 +20,12 @@ const Gallery = ({ pictures }) => {
 
   return (
     <div className="gallery">
-      {pictures.length > 1 && <button onClick={prevImage}>←</button>}
-      <img 
-        src={pictures[currentIndex]} 
-        alt={`Logement ${currentIndex + 1}`} 
-        style={{ width: '400px', height: '250px', objectFit: 'cover', borderRadius: '10px' }} 
-      />
-      {pictures.length > 1 && <button onClick={nextImage}>→</button>}
+      <button onClick={prevImage} className="arrow left">❮</button>
+      <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      <button onClick={nextImage} className="arrow right">❯</button>
+      <p className="image-count">
+        {currentIndex + 1} / {pictures.length}
+      </p>
     </div>
   );
 };
