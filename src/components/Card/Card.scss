@@ -1,25 +1,25 @@
 .card {
-    position: relative;
-    display: block;
-    border-radius: 10px;
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-   
-    .card-image {
-      width: 340px;
-      height: 340px;
-      object-fit: cover;
-    border-radius: 10px;
-    }
-  
-    .card-title {
-      position: absolute;
-      bottom: 10px;
-      left: 15px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  width: 340px;
+  height: 340px;
+  margin: 0 10px 0 5px;
+}
+
+  .card-image {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
   }
-  
+
+  .card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+

@@ -1,11 +1,15 @@
 .logements-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1240px;
-  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  row-gap: 45px;
+  // max-width: 1240px;
+  width: 90%;
+  // margin-top: 20px;
   padding: 40px;
   background: #f6f6f6;
   border-radius: 25px;
-  margin: 30px;
+  margin: 0 15px 0 25px;
+  overflow-y: scroll;
+  max-height: 829px;
 }

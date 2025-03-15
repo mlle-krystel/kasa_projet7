@@ -1,0 +1,44 @@
+.logo-footer {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background: black;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.first-white {
+  height: 36px;
+  width: 31px;
+  bottom: 5px;
+  position: relative;
+  color: black;
+}
+
+.white-s,
+.white-a {
+  height: 28px;
+  width: 23px;
+  padding-left: 4px;
+}
+
+.logo-footer-container {
+  position: relative;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-house {
+  width: 26px;
+  height: 31px;
+}
+
+.white-door {
+  position: absolute;
+  bottom: 3px;
+  left: 28px;
+  transform: translateX(-50%);
+}
+
