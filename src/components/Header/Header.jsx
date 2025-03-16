@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // ✅ Import de Link pour la navigation interne
+import { Link } from "react-router-dom"; 
 import Logo from "../Logo/Logo.jsx";
 import "./Header.scss";
 

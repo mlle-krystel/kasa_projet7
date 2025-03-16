@@ -1,0 +1,127 @@
+.logement-gallery {
+  max-width: 1240px;
+
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Conteneur principal du header */
+.logement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Partie gauche : Titre, localisation et tags */
+.logement-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Titre du logement */
+.logement-title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 143%;
+}
+
+/* Localisation */
+.logement-location {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+  line-height: 143%;
+}
+
+/* Conteneur des tags */
+.tags-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Style des tags */
+.tag {
+  background: #ff6060;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+
+  width: 115px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Partie droite : Hôte + Étoiles */
+.logement-host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Informations sur l'hôte */
+.host {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Nom de l'hôte */
+.host-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 143%;
+  color: #ff6060;
+  width: 93px;
+  
+}
+
+/* Photo de l'hôte */
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Conteneur des étoiles */
+.stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+/* Étoiles vides */
+.star {
+  font-size: 20px;
+  color: #e3e3e3;
+}
+
+/* Étoiles remplies */
+.star.filled {
+  color: #ff6060;
+}
+
+/* Conteneur des collapses */
+.collapses-container {
+  display: flex;
+  justify-content: space-between;
+ 
+  gap: 60px;
+  margin-top: 20px;
+  max-width: 1240px;
+  width: 100%;
+  // min-height: 52px;
+}

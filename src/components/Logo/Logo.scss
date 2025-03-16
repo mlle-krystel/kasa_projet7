@@ -1,13 +1,14 @@
 .logo {
-    display: flex;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    color: #FF6060;
-    background: white;
-    justify-content: start;
-   
-    padding: 10px;
+  display: flex;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      color: #FF6060;
+      background: white;
+      position: relative;
+      margin-top: 10px;
+      left: -10px;
   }
+  
   
   .firstLetter {
     height: 62px;
