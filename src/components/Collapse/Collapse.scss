@@ -1,5 +1,5 @@
+/* Style par défaut */
 .collapse-button {
-  width: 582px;
   background: #ff6060;
   color: white;
   font-size: 18px;
@@ -14,6 +14,47 @@
   align-items: center;
 }
 
+/* 💡 Style spécifique pour Logement */
+.collapse-button-logement {
+  width: 582px;
+}
+
+/* 💡 Style spécifique pour About */
+.collapse-button-about {
+  width: 1023px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 💡 Disposition des collapse sur About */
+.collapse-about {
+  display: flex;
+  flex-direction: column;
+  width: 1023px;
+  margin:  30px auto;
+}
+
+.collapse-content {
+  display: block;
+  background: #f6f6f6;
+  padding: 20px 0;
+  border-radius: 0 0 5px 5px;
+  font-size: 18px;
+}
+
+
+
+/* Style pour la page Logement */
+.collapse-logement .collapse-content {
+  width: 582px;
+}
+
+/* Style pour la page About */
+.collapse-about .collapse-content {
+  width: 100%;
+}
+
+
 .arrow-collapse {
   font-size: 16px;
   transform: rotate(90deg);
@@ -23,10 +64,3 @@
   transform: rotate(-90deg);
 }
 
-.collapse-content {
-  display: block;
-  background: #f6f6f6;
-  width: 582px;
-  padding: 20px 0;
-  border-radius: 0 0 5px 5px;
-}

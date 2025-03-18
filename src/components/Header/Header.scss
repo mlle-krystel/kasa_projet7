@@ -1,25 +1,26 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    font-family: "Montserrat", sans-serif;
-    max-width: 1240px;
-    width: 90%;
-  }
-  
-  nav {
-    display: flex;
-    gap: 40px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  nav a.active, nav a:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  width: 1240px;
+width: 100%;
+  gap: 40em;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+
+}

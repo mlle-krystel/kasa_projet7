@@ -1,21 +1,26 @@
 /* Centrage global */
-body {
+body,
+html {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  min-height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
+
+
+
 
 /* Conteneur global de l'application */
 #root {
-  width: 100%;
   max-width: 1440px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
+

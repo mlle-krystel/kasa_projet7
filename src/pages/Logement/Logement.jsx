@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import Gallery from "../../components/Gallery/Gallery.jsx";
+import NotFound from "../NotFound/NotFound.jsx";
 
 import "./Logement.scss";
 
@@ -10,7 +11,7 @@ export function Logement() {
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <h1>Logement non trouvé</h1>;
+    return <NotFound />;
   }
 
   // Générer les étoiles
@@ -19,6 +20,7 @@ export function Logement() {
 
   return (
     <div className="logement-gallery">
+    
       <Gallery pictures={logement.pictures} />
 
       <div className="logement-header">
@@ -54,15 +56,17 @@ export function Logement() {
         </div>
       </div>
 
-      <div className="collapses-container">
-        <Collapse title="Description">{logement.description}</Collapse>
+      <div className="collapses-container-page">
+      <Collapse title="Description">
+  <p className="text-logement">{logement.description}</p>
+</Collapse>
+
         <Collapse title="Équipements">
-          <ul>
-            {logement.equipments.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </Collapse>
+  {logement.equipments.map((item, index) => (
+    <p className="text-logement"  key={index}>{item}</p>
+  ))}
+</Collapse>
+
       </div>
     </div>
   );

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "./Gallery.scss"; 
+import NotFound from "../../pages/NotFound/NotFound";
 
-const Gallery = ({ pictures }) => {
+const Gallery = ({ pictures = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!pictures || pictures.length === 0) {
-    return <p>Aucune image disponible</p>; 
+  if (pictures.length === 0) {
+    return <NotFound />;
   }
+
+  const isSingleImage = pictures.length === 1;
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
@@ -20,12 +23,19 @@ const Gallery = ({ pictures }) => {
 
   return (
     <div className="gallery">
-      <button onClick={prevImage} className="arrow left">❮</button>
-      <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-      <button onClick={nextImage} className="arrow right">❯</button>
-      <p className="image-count">
-        {currentIndex + 1} / {pictures.length}
-      </p>
+      {!isSingleImage && (
+        <>
+          <button onClick={prevImage} className="arrow left" aria-label="Image précédente">❮</button>
+          <button onClick={nextImage} className="arrow right" aria-label="Image suivante">❯</button>
+          <p className="image-count">
+            {currentIndex + 1} / {pictures.length}
+          </p>
+        </>
+      )}
+      
+      <img 
+        src={pictures[currentIndex]} 
+        alt={`Image ${currentIndex + 1}`} />
     </div>
   );
 };
