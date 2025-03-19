@@ -20,7 +20,6 @@ export function Logement() {
 
   return (
     <div className="logement-gallery">
-    
       <Gallery pictures={logement.pictures} />
 
       <div className="logement-header">
@@ -57,16 +56,17 @@ export function Logement() {
       </div>
 
       <div className="collapses-container-page">
-      <Collapse title="Description">
-  <p className="text-logement">{logement.description}</p>
-</Collapse>
+        <Collapse title="Description">
+          <p className="text-logement">{logement.description}</p>
+        </Collapse>
 
         <Collapse title="Équipements">
-  {logement.equipments.map((item, index) => (
-    <p className="text-logement"  key={index}>{item}</p>
-  ))}
-</Collapse>
-
+          {logement.equipments.map((item, index) => (
+            <p className="text-logement" key={index}>
+              {item}
+            </p>
+          ))}
+        </Collapse>
       </div>
     </div>
   );

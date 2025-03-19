@@ -11,14 +11,14 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <>   
-      <Header />  
-     <main>
+    <>
+      <Header />
+      <main>
         <Outlet />
-        </main>
-      <Footer />  
+      </main>
+      <Footer />
     </>
   );
 };
 
-  export default Layout;
+export default Layout;

@@ -1,6 +1,6 @@
 import React from "react";
 import K from "../../assets/K.png";
-import house from "../../assets/house.png"; 
+import house from "../../assets/house.png";
 import door from "../../assets/door.png";
 import S from "../../assets/S.png";
 import A from "../../assets/A.png";
@@ -8,7 +8,7 @@ import "./Logo.scss";
 
 const Logo = () => {
   return (
-    <div className="logo"> 
+    <div className="logo">
       <img src={K} alt="K" className="firstLetter" />
       <div className="logo-container">
         <img src={house} alt="House" className="logo-house" />

@@ -4,7 +4,7 @@
   align-items: center;
   font-family: "Montserrat", sans-serif;
   max-width: 1240px;
-width: 100%;
+  width: 100%;
   gap: 44em;
   margin: 20px auto;
 }
@@ -27,26 +27,24 @@ nav a.active {
 
 @media screen and (max-width: 1024px) {
   .header {
-
-gap: 20em;
+    gap: 20em;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .header {
     width: 335px;
-    height: 47px; 
-    gap: 2em; 
+    height: 47px;
+    gap: 2em;
     justify-content: space-between;
-   margin: 0;
+    margin: 0;
   }
 
   nav {
-    gap: 15px; 
+    gap: 15px;
   }
 
   nav a {
-    font-size: 18px; 
+    font-size: 18px;
   }
 }

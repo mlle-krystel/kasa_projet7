@@ -1,55 +1,47 @@
 .notfound-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   height: 730px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 730px;
+  gap: 20px;
+}
+
+.erreur {
+  font-size: 288px;
+  font-weight: bold;
+  color: #ff6060;
+  margin: 0;
+}
+
+.oups {
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.notfound-link {
+  font-size: 18px;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .notfound-container {
+    width: 335px;
+    gap: 18%;
   }
-  
+
   .erreur {
-    font-size: 288px;  
-    font-weight: bold;
-    color: #FF6060;
-    margin: 0;
+    font-size: 96px;
   }
-  
+
   .oups {
-    font-size: 36px;
-    color: #FF6060;
-  }
-  
-  .notfound-link {
     font-size: 18px;
-    color: black;
-    text-decoration: underline;
-    cursor: pointer;
-  
   }
-  
 
-  @media screen and (max-width: 768px) {
-    .notfound-container {
-      width: 335px;
-      gap: 18%; 
-    }
-
-    .erreur {
-      font-size: 96px;  
-
-    }
-    
-    .oups {
-      font-size: 18px;
-  
-    }
-    
-    .notfound-link {
-      font-size: 14px;
-     
-    
-    }
-    
-  
+  .notfound-link {
+    font-size: 14px;
   }
+}

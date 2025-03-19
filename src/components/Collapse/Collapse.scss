@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   width: 1023px;
-  margin:  30px auto;
+  margin: 30px auto;
   align-items: center;
 }
 
@@ -43,8 +43,6 @@
   font-size: 18px;
 }
 
-
-
 /* Style pour la page Logement */
 .collapse-logement .collapse-content {
   width: 582px;
@@ -54,7 +52,6 @@
 .collapse-about .collapse-content {
   width: 100%;
 }
-
 
 .arrow-collapse {
   font-size: 16px;
@@ -75,13 +72,12 @@
 
   .collapse-logement .collapse-content {
     width: 335px;
-   
   }
 
-.collapse-about {
-  width: 335px;
-  margin: 15px;
-}
+  .collapse-about {
+    width: 335px;
+    margin: 15px;
+  }
 
   .collapse-button-about {
     width: 335px;
