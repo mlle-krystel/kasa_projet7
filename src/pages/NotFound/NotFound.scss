@@ -29,4 +29,27 @@
   }
   
 
- 
+  @media screen and (max-width: 768px) {
+    .notfound-container {
+      width: 335px;
+      gap: 18%; 
+    }
+
+    .erreur {
+      font-size: 96px;  
+
+    }
+    
+    .oups {
+      font-size: 18px;
+  
+    }
+    
+    .notfound-link {
+      font-size: 14px;
+     
+    
+    }
+    
+  
+  }

@@ -42,3 +42,36 @@
     left: 31px;
     transform: translateX(-50%);
   }
+
+  @media screen and (max-width: 768px) {
+  .logo {
+    width: 130px; 
+    height: auto;
+
+  }
+
+  .firstLetter {
+    width: 37px; 
+    height: 42px;
+  }
+
+  .s-letter, .a-letter {
+    width: 28px;
+    height: 33px;
+  }
+
+  .logo-house {
+    width: 31px;
+    height: 36px;
+  }
+
+  .logo-door {
+    width: 6px;
+        height: 15px;
+        left: 22px;
+  }
+
+  .logo-container {
+    width: 30px;
+  }
+}

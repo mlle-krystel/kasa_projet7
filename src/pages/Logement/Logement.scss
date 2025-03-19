@@ -1,10 +1,13 @@
 .logement-gallery {
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
 }
+
 
 
 /* Conteneur principal du header */
@@ -46,6 +49,7 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
+
 }
 
 /* Style des tags */
@@ -62,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Partie droite : Hôte + Étoiles */
@@ -99,11 +104,12 @@
   display: flex;
   gap: 5px;
   margin-top: 10px;
+  font-size: 24px;
 }
 
 /* Étoiles vides */
 .star {
-  font-size: 20px;
+ 
   color: #e3e3e3;
 }
 
@@ -123,3 +129,61 @@
   margin: 0 10px 0 20px;
 }
 
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .logement-gallery {
+    width: 335px;
+    padding: 20px;
+  }
+
+  .logement-header {
+    flex-direction: column;
+    align-items: flex-start;
+margin: 0;
+  }
+
+  .logement-title {
+    font-size: 18px;
+  }
+
+  .logement-location {
+    font-size: 14px;
+  }
+
+  .tag {
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+  line-height: 10px;
+  }
+
+  .host-name {
+    font-size: 12px;
+margin: 0;
+  }
+
+  .host img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    right: 10px;
+  }
+.star {
+  font-size: 18px;
+}
+  .logement-host-rating {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .collapses-container-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

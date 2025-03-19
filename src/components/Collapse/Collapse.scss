@@ -32,6 +32,7 @@
   flex-direction: column;
   width: 1023px;
   margin:  30px auto;
+  align-items: center;
 }
 
 .collapse-content {
@@ -64,3 +65,27 @@
   transform: rotate(-90deg);
 }
 
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .collapse-button {
+    width: 335px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .collapse-logement .collapse-content {
+    width: 335px;
+   
+  }
+
+.collapse-about {
+  width: 335px;
+  margin: 15px;
+}
+
+  .collapse-button-about {
+    width: 335px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

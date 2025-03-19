@@ -5,11 +5,11 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 

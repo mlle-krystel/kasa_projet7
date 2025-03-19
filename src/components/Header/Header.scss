@@ -3,9 +3,10 @@
   justify-content: space-around;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  width: 1240px;
+  max-width: 1240px;
 width: 100%;
-  gap: 40em;
+  gap: 44em;
+  margin: 20px auto;
 }
 
 nav {
@@ -22,5 +23,30 @@ nav a {
 
 nav a.active {
   text-decoration: underline;
+}
 
+@media screen and (max-width: 1024px) {
+  .header {
+
+gap: 20em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 335px;
+    height: 47px; 
+    gap: 2em; 
+    justify-content: space-between;
+   margin: 0;
+  }
+
+  nav {
+    gap: 15px; 
+  }
+
+  nav a {
+    font-size: 18px; 
+  }
 }

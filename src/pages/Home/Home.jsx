@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <>
     
 
 {/* En inscrivant le texte de Banner ici, on pourra afficher une autre bannière avec un texte différent sur d’autres pages.  */}
@@ -22,7 +22,7 @@ const Home = () => {
         ))}
       </div>
       
-    </div>
+    </>
   );
 };
 

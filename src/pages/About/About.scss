@@ -1,6 +1,8 @@
 .container-about {
     margin: 40px 0;
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 .about-text{
@@ -10,3 +12,13 @@
 .title {
     font-size: 94px;
 }
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .container-about {
+      width: 100%;
+      margin: 0;
+
+    }
+  }

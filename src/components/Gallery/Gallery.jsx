@@ -25,8 +25,8 @@ const Gallery = ({ pictures = [] }) => {
     <div className="gallery">
       {!isSingleImage && (
         <>
-          <button onClick={prevImage} className="arrow left" aria-label="Image précédente">❮</button>
-          <button onClick={nextImage} className="arrow right" aria-label="Image suivante">❯</button>
+          <button onClick={prevImage} className="arrow-gallery left" aria-label="Image précédente">❮</button>
+          <button onClick={nextImage} className="arrow-gallery right" aria-label="Image suivante">❯</button>
           <p className="image-count">
             {currentIndex + 1} / {pictures.length}
           </p>
