@@ -1,6 +1,6 @@
+/* Conteneur principal */
 .logement-gallery {
-  max-width: 1240px;
-  width: 100%;
+  width: 1200px;
   padding: 45px 0;
   display: flex;
   flex-direction: column;
@@ -122,8 +122,15 @@
   margin-top: 30px;
 }
 
+.collapses-container-page .collapse {
+  max-width: 582px;
+}
+
+.collapses-container-page .collapse-title {
+  font-size: 18px;
+}
+
 .text-logement {
-  width: 574px;
   margin: auto 0;
   font-size: 15px;
   padding-left: 10px;

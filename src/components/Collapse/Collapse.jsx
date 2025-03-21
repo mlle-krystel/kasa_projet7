@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./Collapse.scss";
 
-const Collapse = ({ title, children, isAbout }) => {
+const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className={`collapse ${isAbout ? "collapse-about" : "collapse-logement"}`}
+      className="collapse"
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`collapse-button ${
-          isAbout ? "collapse-button-about" : "collapse-button-logement"
-        }`}
+        className="collapse-button"
       >
         <span className="collapse-title">{title}</span>
         <span className={`arrow-collapse ${isOpen ? "open-collapse" : ""}`}>

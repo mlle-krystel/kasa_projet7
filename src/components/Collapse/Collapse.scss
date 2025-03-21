@@ -1,44 +1,34 @@
-/* Style des boutons */
-.collapse-button {
-  background: #ff6060;
-  color: white;
-
-  font-weight: 700;
-  text-align: left;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.collapse-button-logement {
-  width: 582px;
-}
-
-.collapse-button-about {
-  width: 1023px;
-}
-
-.collapse-about .collapse-title {
-  font-size: 24px;
-}
-
-.collapse-logement .collapse-title {
-  font-size: 18px;
-}
-
-/* Style du contenu */
-.collapse-content {
-  display: block;
-  background: #f6f6f6;
-  padding-top: 10px;
-  border-radius: 0 0 5px 5px;
-  font-size: 18px;
+.collapse {
   width: 100%;
+
+  .collapse-button {
+    background: #ff6060;
+    color: white;
+
+    font-weight: 700;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Style du contenu */
+  .collapse-content {
+    display: block;
+    background: #f6f6f6;
+    padding-top: 10px;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+    width: 100%;
+  }
 }
+
 
 /* Flèches */
 .arrow-collapse {
@@ -50,24 +40,9 @@
   transform: rotate(-90deg);
 }
 
-/* ✅ Ajout des media queries */
-@media screen and (max-width: 1024px) {
-  .collapse-button-about {
-    width: 750px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .collapse-button {
     width: 335px;
     height: 30px;
-  }
-  .collapse-about .collapse-title {
-    font-size: 13px;
-  }
-
-  .collapse-content {
-    width: 335px;
-    font-size: 13px;
   }
 }
