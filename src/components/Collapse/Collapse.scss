@@ -12,7 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1023px; 
+  margin: 0 auto; 
 }
+
 
 /* 💡 Style spécifique pour Logement */
 .collapse-button-logement {

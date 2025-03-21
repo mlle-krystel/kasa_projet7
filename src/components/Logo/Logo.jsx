@@ -1,9 +1,9 @@
 import React from "react";
-import K from "../../assets/K.png";
-import house from "../../assets/house.png";
-import door from "../../assets/door.png";
-import S from "../../assets/S.png";
-import A from "../../assets/A.png";
+import K from "../../assets/k.svg";
+import house from "../../assets/house.svg";
+import door from "../../assets/door.svg";
+import S from "../../assets/s.svg";
+import A from "../../assets/a.svg";
 import "./Logo.scss";
 
 const Logo = () => {

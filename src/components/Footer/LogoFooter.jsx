@@ -1,9 +1,9 @@
 import React from "react";
-import whiteK from "../../assets/Logo-footer/K.png";
-import footerHouse from "../../assets/Logo-footer/house.png";
-import footerDoor from "../../assets/Logo-footer/door.png";
-import whiteS from "../../assets/Logo-footer/s.png";
-import whiteA from "../../assets/Logo-footer/a.png";
+import whiteK from "../../assets/Logo-footer/k.svg";
+import footerHouse from "../../assets/Logo-footer/house.svg";
+import footerDoor from "../../assets/Logo-footer/door.svg";
+import whiteS from "../../assets/Logo-footer/s.svg";
+import whiteA from "../../assets/Logo-footer/a.svg";
 import "./LogoFooter.scss";
 
 const LogoFooter = () => {
