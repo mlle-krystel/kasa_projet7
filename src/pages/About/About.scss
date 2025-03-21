@@ -1,22 +1,29 @@
 .container-about {
-  margin: 40px 0;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+  max-width: 1023px;
+  width: 100%;
 }
 
 .about-text {
-  margin: 0 10px 0 20px;
+  margin: auto 10px;
 }
 
-.title {
-  font-size: 94px;
+// Adaptation pour tablette
+@media screen and (max-width: 1024px) {
+  .container-about {
+    max-width: 750px;
+  }
 }
 
-/* Mobile */
+// Adaptation pour mobile
 @media screen and (max-width: 768px) {
   .container-about {
     width: 100%;
     margin: 0;
+    margin-top: 20px;
   }
 }

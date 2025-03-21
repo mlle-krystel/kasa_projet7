@@ -8,40 +8,10 @@
   margin-top: 10px;
 }
 
-.firstLetter {
-  height: 62px;
-  width: 54px;
-  bottom: 5px;
-  position: relative;
-}
 
-.s-letter,
-.a-letter {
-  height: 48px;
-  width: 40px;
-  padding-left: 5px;
-}
 
-.logo-container {
-  position: relative;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-}
 
-.logo-house {
-  width: 46px;
-  height: 53px;
-}
 
-.logo-door {
-  position: absolute;
-  bottom: 3px;
-  left: 31px;
-  transform: translateX(-50%);
-}
 
 @media screen and (max-width: 768px) {
   .logo {
@@ -49,29 +19,4 @@
     height: auto;
   }
 
-  .firstLetter {
-    width: 37px;
-    height: 42px;
-  }
-
-  .s-letter,
-  .a-letter {
-    width: 28px;
-    height: 33px;
-  }
-
-  .logo-house {
-    width: 31px;
-    height: 36px;
-  }
-
-  .logo-door {
-    width: 6px;
-    height: 15px;
-    left: 22px;
-  }
-
-  .logo-container {
-    width: 30px;
-  }
 }

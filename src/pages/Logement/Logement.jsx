@@ -43,15 +43,15 @@ export function Logement() {
             <img src={logement.host.picture} alt={logement.host.name} />
           </div>
           <div className="stars">
-  {[...Array(totalStars)].map((_, index) => (
-    <span
-      key={index}
-      className={`star ${index < rating ? "filled" : ""}`}>
-      ★
-    </span>
-  ))}
-</div>
-
+            {[...Array(totalStars)].map((_, index) => (
+              <span
+                key={index}
+                className={`star ${index < rating ? "filled" : ""}`}
+              >
+                ★
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 

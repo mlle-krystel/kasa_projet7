@@ -1,8 +1,8 @@
-/* Style par défaut */
+/* Style des boutons */
 .collapse-button {
   background: #ff6060;
   color: white;
-  font-size: 18px;
+
   font-weight: 700;
   text-align: left;
   padding: 15px;
@@ -12,51 +12,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1023px; 
-  margin: 0 auto; 
 }
 
-
-/* 💡 Style spécifique pour Logement */
 .collapse-button-logement {
   width: 582px;
 }
 
-/* 💡 Style spécifique pour About */
 .collapse-button-about {
   width: 1023px;
+}
+
+.collapse-about .collapse-title {
   font-size: 24px;
-  font-weight: 700;
 }
 
-/* 💡 Disposition des collapse sur About */
-.collapse-about {
-  display: flex;
-  flex-direction: column;
-  width: 1023px;
-  margin: 30px auto;
-  align-items: center;
-}
-
-.collapse-content {
-  display: block;
-  background: #f6f6f6;
-  padding: 20px 0;
-  border-radius: 0 0 5px 5px;
+.collapse-logement .collapse-title {
   font-size: 18px;
 }
 
-/* Style pour la page Logement */
-.collapse-logement .collapse-content {
-  width: 582px;
-}
-
-/* Style pour la page About */
-.collapse-about .collapse-content {
+/* Style du contenu */
+.collapse-content {
+  display: block;
+  background: #f6f6f6;
+  padding-top: 10px;
+  border-radius: 0 0 5px 5px;
+  font-size: 18px;
   width: 100%;
 }
 
+/* Flèches */
 .arrow-collapse {
   font-size: 16px;
   transform: rotate(90deg);
@@ -66,26 +50,24 @@
   transform: rotate(-90deg);
 }
 
-/* Mobile */
+/* ✅ Ajout des media queries */
+@media screen and (max-width: 1024px) {
+  .collapse-button-about {
+    width: 750px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .collapse-button {
     width: 335px;
     height: 30px;
+  }
+  .collapse-about .collapse-title {
     font-size: 13px;
   }
 
-  .collapse-logement .collapse-content {
+  .collapse-content {
     width: 335px;
-  }
-
-  .collapse-about {
-    width: 335px;
-    margin: 15px;
-  }
-
-  .collapse-button-about {
-    width: 335px;
-    height: 40px;
-    font-size: 16px;
+    font-size: 13px;
   }
 }

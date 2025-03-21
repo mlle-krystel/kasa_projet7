@@ -14,7 +14,6 @@ html {
 
 /* Conteneur global de l'application */
 #root {
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;

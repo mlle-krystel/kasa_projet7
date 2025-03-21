@@ -3,27 +3,23 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   max-width: 1240px;
-  width: 90%;
-  height: 720px;
   padding: 40px;
   background: #f6f6f6;
   border-radius: 25px;
   margin: 0 auto 50px auto;
-  overflow-y: scroll;
   overflow-x: hidden;
-  scrollbar-width: thin;
 }
 
 /* ✅ Tablette : 2 colonnes */
 @media screen and (max-width: 1024px) {
   .logements-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     height: 700px;
-    width: 100%;
+    max-width: 900px;
     justify-items: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
 }
 
@@ -32,11 +28,10 @@
   .logements-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    padding: initial;
+    padding: 0;
     height: 810px;
     border-radius: 10px;
     background: none;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    margin: 30px auto;
   }
 }

@@ -14,7 +14,7 @@ const Collapse = ({ title, children, isAbout }) => {
           isAbout ? "collapse-button-about" : "collapse-button-logement"
         }`}
       >
-        {title}
+        <span className="collapse-title">{title}</span>
         <span className={`arrow-collapse ${isOpen ? "open-collapse" : ""}`}>
           ❮
         </span>
